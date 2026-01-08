@@ -1,0 +1,9 @@
+{
+  "query": "SELECT 'utm_links' as table_name, id, destination_url as data FROM utm_links WHERE LOWER(destination_url) LIKE '%test%' OR LOWER(utm_source) LIKE '%test%' OR LOWER(utm_campaign) LIKE '%test%'\nUNION ALL\nSELECT 'socials', id, nom FROM socials WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'content_types', id, nom FROM content_types WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'objectives', id, nom FROM objectives WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'audiences', id, nom FROM audiences WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'channels', id, nom FROM channels WHERE LOWER(nom) LIKE '%test%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute SELECT 'utm_links' as table_name, id, destination_url as data FROM utm_links WHERE LOWER(destination_url) LIKE '%test%' OR LOWER(utm_source) LIKE '%test%' OR LOWER(utm_campaign) LIKE '%test%'\nUNION ALL\nSELECT 'socials', id, nom FROM socials WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'content_types', id, nom FROM content_types WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'objectives', id, nom FROM objectives WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'audiences', id, nom FROM audiences WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'channels', id, nom FROM channels WHERE LOWER(nom) LIKE '%test%';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 60
+}

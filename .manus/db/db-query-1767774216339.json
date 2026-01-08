@@ -1,0 +1,9 @@
+{
+  "query": "-- Vérifier les données existantes\nSELECT 'socials' as table_name, id, nom FROM socials WHERE nom LIKE '%test%' OR nom LIKE '%Test%'\nUNION ALL\nSELECT 'content_types', id, nom FROM content_types WHERE nom LIKE '%test%' OR nom LIKE '%Test%'\nUNION ALL\nSELECT 'objectives', id, nom FROM objectives WHERE nom LIKE '%test%' OR nom LIKE '%Test%'\nUNION ALL\nSELECT 'channels', id, nom FROM channels WHERE nom LIKE '%test%' OR nom LIKE '%Test%'\nUNION ALL\nSELECT 'audiences', id, nom FROM audiences WHERE nom LIKE '%test%' OR nom LIKE '%Test%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute -- Vérifier les données existantes\nSELECT 'socials' as table_name, id, nom FROM socials WHERE nom LIKE '%test%' OR nom LIKE '%Test%'\nUNION ALL\nSELECT 'content_types', id, nom FROM content_types WHERE nom LIKE '%test%' OR nom LIKE '%Test%'\nUNION ALL\nSELECT 'objectives', id, nom FROM objectives WHERE nom LIKE '%test%' OR nom LIKE '%Test%'\nUNION ALL\nSELECT 'channels', id, nom FROM channels WHERE nom LIKE '%test%' OR nom LIKE '%Test%'\nUNION ALL\nSELECT 'audiences', id, nom FROM audiences WHERE nom LIKE '%test%' OR nom LIKE '%Test%';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 70
+}

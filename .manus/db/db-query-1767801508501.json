@@ -1,0 +1,90 @@
+{
+  "query": "SELECT COLUMN_NAME, DATA_TYPE, COLUMN_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'click_events' ORDER BY ORDINAL_POSITION;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute SELECT COLUMN_NAME, DATA_TYPE, COLUMN_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'click_events' ORDER BY ORDINAL_POSITION;",
+  "rows": [
+    {
+      "COLUMN_NAME": "id",
+      "DATA_TYPE": "int",
+      "COLUMN_TYPE": "int(11)"
+    },
+    {
+      "COLUMN_NAME": "utm_link_id",
+      "DATA_TYPE": "int",
+      "COLUMN_TYPE": "int(11)"
+    },
+    {
+      "COLUMN_NAME": "clicked_at",
+      "DATA_TYPE": "timestamp",
+      "COLUMN_TYPE": "timestamp"
+    },
+    {
+      "COLUMN_NAME": "ip_address",
+      "DATA_TYPE": "varchar",
+      "COLUMN_TYPE": "varchar(45)"
+    },
+    {
+      "COLUMN_NAME": "user_agent",
+      "DATA_TYPE": "text",
+      "COLUMN_TYPE": "text"
+    },
+    {
+      "COLUMN_NAME": "referer",
+      "DATA_TYPE": "text",
+      "COLUMN_TYPE": "text"
+    },
+    {
+      "COLUMN_NAME": "country",
+      "DATA_TYPE": "varchar",
+      "COLUMN_TYPE": "varchar(100)"
+    },
+    {
+      "COLUMN_NAME": "country_code",
+      "DATA_TYPE": "varchar",
+      "COLUMN_TYPE": "varchar(10)"
+    },
+    {
+      "COLUMN_NAME": "city",
+      "DATA_TYPE": "varchar",
+      "COLUMN_TYPE": "varchar(100)"
+    },
+    {
+      "COLUMN_NAME": "region",
+      "DATA_TYPE": "varchar",
+      "COLUMN_TYPE": "varchar(100)"
+    },
+    {
+      "COLUMN_NAME": "device_type",
+      "DATA_TYPE": "varchar",
+      "COLUMN_TYPE": "varchar(50)"
+    },
+    {
+      "COLUMN_NAME": "browser",
+      "DATA_TYPE": "varchar",
+      "COLUMN_TYPE": "varchar(100)"
+    },
+    {
+      "COLUMN_NAME": "browser_version",
+      "DATA_TYPE": "varchar",
+      "COLUMN_TYPE": "varchar(50)"
+    },
+    {
+      "COLUMN_NAME": "os",
+      "DATA_TYPE": "varchar",
+      "COLUMN_TYPE": "varchar(100)"
+    },
+    {
+      "COLUMN_NAME": "os_version",
+      "DATA_TYPE": "varchar",
+      "COLUMN_TYPE": "varchar(50)"
+    },
+    {
+      "COLUMN_NAME": "platform",
+      "DATA_TYPE": "varchar",
+      "COLUMN_TYPE": "varchar(100)"
+    }
+  ],
+  "messages": [],
+  "stdout": "COLUMN_NAME\tDATA_TYPE\tCOLUMN_TYPE\nid\tint\tint(11)\nutm_link_id\tint\tint(11)\nclicked_at\ttimestamp\ttimestamp\nip_address\tvarchar\tvarchar(45)\nuser_agent\ttext\ttext\nreferer\ttext\ttext\ncountry\tvarchar\tvarchar(100)\ncountry_code\tvarchar\tvarchar(10)\ncity\tvarchar\tvarchar(100)\nregion\tvarchar\tvarchar(100)\ndevice_type\tvarchar\tvarchar(50)\nbrowser\tvarchar\tvarchar(100)\nbrowser_version\tvarchar\tvarchar(50)\nos\tvarchar\tvarchar(100)\nos_version\tvarchar\tvarchar(50)\nplatform\tvarchar\tvarchar(100)\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

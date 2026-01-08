@@ -1,0 +1,8 @@
+{
+  "query": "DELETE FROM utm_links WHERE destinationUrl LIKE '%Test%' OR angleMarketing LIKE '%Test%' OR hook LIKE '%Test%' OR audienceCible LIKE '%Test%';\nDELETE FROM publication_images WHERE id IN (SELECT pi.id FROM (SELECT id FROM publication_images WHERE utmLinkId IN (SELECT id FROM utm_links WHERE destinationUrl LIKE '%Test%')) AS pi);\nDELETE FROM socials WHERE nom LIKE '%Test%';\nDELETE FROM content_types WHERE nom LIKE '%Test%';\nDELETE FROM objectives WHERE nom LIKE '%Test%';\nDELETE FROM channels WHERE nom LIKE '%Test%';\nDELETE FROM audiences WHERE nom LIKE '%Test%' OR description LIKE '%Test%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute DELETE FROM utm_links WHERE destinationUrl LIKE '%Test%' OR angleMarketing LIKE '%Test%' OR hook LIKE '%Test%' OR audienceCible LIKE '%Test%';\nDELETE FROM publication_images WHERE id IN (SELECT pi.id FROM (SELECT id FROM publication_images WHERE utmLinkId IN (SELECT id FROM utm_links WHERE destinationUrl LIKE '%Test%')) AS pi);\nDELETE FROM socials WHERE nom LIKE '%Test%';\nDELETE FROM content_types WHERE nom LIKE '%Test%';\nDELETE FROM objectives WHERE nom LIKE '%Test%';\nDELETE FROM channels WHERE nom LIKE '%Test%';\nDELETE FROM audiences WHERE nom LIKE '%Test%' OR description LIKE '%Test%';",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'destinationurl' in 'where clause'"
+  ]
+}

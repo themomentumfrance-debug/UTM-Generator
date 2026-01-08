@@ -1,0 +1,82 @@
+{
+  "query": "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'utm_links' ORDER BY ORDINAL_POSITION;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'utm_links' ORDER BY ORDINAL_POSITION;",
+  "rows": [
+    {
+      "COLUMN_NAME": "id"
+    },
+    {
+      "COLUMN_NAME": "destination_url"
+    },
+    {
+      "COLUMN_NAME": "social_id"
+    },
+    {
+      "COLUMN_NAME": "content_type_id"
+    },
+    {
+      "COLUMN_NAME": "channel_id"
+    },
+    {
+      "COLUMN_NAME": "objectif_id"
+    },
+    {
+      "COLUMN_NAME": "audience_id"
+    },
+    {
+      "COLUMN_NAME": "utm_source"
+    },
+    {
+      "COLUMN_NAME": "utm_medium"
+    },
+    {
+      "COLUMN_NAME": "utm_campaign"
+    },
+    {
+      "COLUMN_NAME": "utm_term"
+    },
+    {
+      "COLUMN_NAME": "utm_content"
+    },
+    {
+      "COLUMN_NAME": "generated_url"
+    },
+    {
+      "COLUMN_NAME": "angle_marketing"
+    },
+    {
+      "COLUMN_NAME": "hook"
+    },
+    {
+      "COLUMN_NAME": "audience_cible"
+    },
+    {
+      "COLUMN_NAME": "budget"
+    },
+    {
+      "COLUMN_NAME": "createdAt"
+    },
+    {
+      "COLUMN_NAME": "updatedAt"
+    },
+    {
+      "COLUMN_NAME": "created_by"
+    },
+    {
+      "COLUMN_NAME": "slug"
+    },
+    {
+      "COLUMN_NAME": "short_url"
+    },
+    {
+      "COLUMN_NAME": "user_id"
+    },
+    {
+      "COLUMN_NAME": "click_count"
+    }
+  ],
+  "messages": [],
+  "stdout": "COLUMN_NAME\nid\ndestination_url\nsocial_id\ncontent_type_id\nchannel_id\nobjectif_id\naudience_id\nutm_source\nutm_medium\nutm_campaign\nutm_term\nutm_content\ngenerated_url\nangle_marketing\nhook\naudience_cible\nbudget\ncreatedAt\nupdatedAt\ncreated_by\nslug\nshort_url\nuser_id\nclick_count\n",
+  "stderr": "",
+  "execution_time_ms": 62
+}

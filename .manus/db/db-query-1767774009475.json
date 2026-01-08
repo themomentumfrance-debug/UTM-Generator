@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE audiences SET nom = 'Entrepreneur' WHERE nom LIKE '%entrepreneur débutant%' OR nom LIKE '%Entrepreneur débutant%';\nINSERT IGNORE INTO audiences (nom, description) VALUES ('Étudiants', 'Étudiants et jeunes en formation');\nINSERT IGNORE INTO audiences (nom, description) VALUES ('Salariés', 'Employés et professionnels salariés');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute UPDATE audiences SET nom = 'Entrepreneur' WHERE nom LIKE '%entrepreneur débutant%' OR nom LIKE '%Entrepreneur débutant%';\nINSERT IGNORE INTO audiences (nom, description) VALUES ('Étudiants', 'Étudiants et jeunes en formation');\nINSERT IGNORE INTO audiences (nom, description) VALUES ('Salariés', 'Employés et professionnels salariés');",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 75
+}

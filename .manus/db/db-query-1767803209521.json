@@ -1,0 +1,22 @@
+{
+  "query": "SELECT id, nom FROM socials WHERE nom LIKE '%X%' OR nom LIKE '%Meta%' OR nom LIKE '%Carrousel%' ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute SELECT id, nom FROM socials WHERE nom LIKE '%X%' OR nom LIKE '%Meta%' OR nom LIKE '%Carrousel%' ORDER BY id;",
+  "rows": [
+    {
+      "id": "5",
+      "nom": "X"
+    },
+    {
+      "id": "30005",
+      "nom": "X (Twitter)"
+    },
+    {
+      "id": "30006",
+      "nom": "X Ads"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnom\n5\tX\n30005\tX (Twitter)\n30006\tX Ads\n",
+  "stderr": "",
+  "execution_time_ms": 60
+}

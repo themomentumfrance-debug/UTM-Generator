@@ -1,0 +1,9 @@
+{
+  "query": "-- Supprimer Meta Ads générique\nDELETE FROM socials WHERE nom = 'Meta Ads';\n\n-- Supprimer Carrousel des types de contenu\nDELETE FROM content_types WHERE nom = 'Carrousel';\n\n-- Ajouter Visuel si n'existe pas\nINSERT IGNORE INTO content_types (nom) VALUES ('Visuel');\n\n-- Ajouter les nouvelles plateformes Meta\nINSERT IGNORE INTO socials (nom) VALUES ('Facebook Ads');\nINSERT IGNORE INTO socials (nom) VALUES ('Instagram Ads');\nINSERT IGNORE INTO socials (nom) VALUES ('WhatsApp Ads');\nINSERT IGNORE INTO socials (nom) VALUES ('Threads');\nINSERT IGNORE INTO socials (nom) VALUES ('Threads Ads');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute -- Supprimer Meta Ads générique\nDELETE FROM socials WHERE nom = 'Meta Ads';\n\n-- Supprimer Carrousel des types de contenu\nDELETE FROM content_types WHERE nom = 'Carrousel';\n\n-- Ajouter Visuel si n'existe pas\nINSERT IGNORE INTO content_types (nom) VALUES ('Visuel');\n\n-- Ajouter les nouvelles plateformes Meta\nINSERT IGNORE INTO socials (nom) VALUES ('Facebook Ads');\nINSERT IGNORE INTO socials (nom) VALUES ('Instagram Ads');\nINSERT IGNORE INTO socials (nom) VALUES ('WhatsApp Ads');\nINSERT IGNORE INTO socials (nom) VALUES ('Threads');\nINSERT IGNORE INTO socials (nom) VALUES ('Threads Ads');",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 171
+}

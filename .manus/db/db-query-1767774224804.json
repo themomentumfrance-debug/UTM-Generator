@@ -1,0 +1,46 @@
+{
+  "query": "SELECT id, nom FROM audiences ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute SELECT id, nom FROM audiences ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "nom": "Entrepreneurs débutants"
+    },
+    {
+      "id": "2",
+      "nom": "PME et TPE"
+    },
+    {
+      "id": "3",
+      "nom": "Freelances"
+    },
+    {
+      "id": "4",
+      "nom": "Marketeurs digitaux"
+    },
+    {
+      "id": "5",
+      "nom": "E-commerçants"
+    },
+    {
+      "id": "6",
+      "nom": "Créateurs de contenu"
+    },
+    {
+      "id": "30003",
+      "nom": "Étudiants"
+    },
+    {
+      "id": "30004",
+      "nom": "Salariés"
+    },
+    {
+      "id": "30005",
+      "nom": "Entrepreneur"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnom\n1\tEntrepreneurs débutants\n2\tPME et TPE\n3\tFreelances\n4\tMarketeurs digitaux\n5\tE-commerçants\n6\tCréateurs de contenu\n30003\tÉtudiants\n30004\tSalariés\n30005\tEntrepreneur\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

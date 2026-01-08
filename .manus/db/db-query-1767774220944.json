@@ -1,0 +1,30 @@
+{
+  "query": "SELECT 'socials' as tbl, COUNT(*) as cnt FROM socials\nUNION ALL SELECT 'content_types', COUNT(*) FROM content_types\nUNION ALL SELECT 'objectives', COUNT(*) FROM objectives\nUNION ALL SELECT 'audiences', COUNT(*) FROM audiences\nUNION ALL SELECT 'utm_links', COUNT(*) FROM utm_links;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute SELECT 'socials' as tbl, COUNT(*) as cnt FROM socials\nUNION ALL SELECT 'content_types', COUNT(*) FROM content_types\nUNION ALL SELECT 'objectives', COUNT(*) FROM objectives\nUNION ALL SELECT 'audiences', COUNT(*) FROM audiences\nUNION ALL SELECT 'utm_links', COUNT(*) FROM utm_links;",
+  "rows": [
+    {
+      "tbl": "socials",
+      "cnt": "19"
+    },
+    {
+      "tbl": "objectives",
+      "cnt": "6"
+    },
+    {
+      "tbl": "content_types",
+      "cnt": "9"
+    },
+    {
+      "tbl": "audiences",
+      "cnt": "9"
+    },
+    {
+      "tbl": "utm_links",
+      "cnt": "3"
+    }
+  ],
+  "messages": [],
+  "stdout": "tbl\tcnt\nsocials\t19\nobjectives\t6\ncontent_types\t9\naudiences\t9\nutm_links\t3\n",
+  "stderr": "",
+  "execution_time_ms": 61
+}

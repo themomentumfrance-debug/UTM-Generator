@@ -1,0 +1,102 @@
+{
+  "query": "SELECT id, nom FROM socials ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute SELECT id, nom FROM socials ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "nom": "Facebook"
+    },
+    {
+      "id": "2",
+      "nom": "Instagram"
+    },
+    {
+      "id": "3",
+      "nom": "TikTok"
+    },
+    {
+      "id": "4",
+      "nom": "YouTube"
+    },
+    {
+      "id": "5",
+      "nom": "X"
+    },
+    {
+      "id": "6",
+      "nom": "Snapchat"
+    },
+    {
+      "id": "7",
+      "nom": "LinkedIn"
+    },
+    {
+      "id": "30001",
+      "nom": "YouTube Ads"
+    },
+    {
+      "id": "30002",
+      "nom": "WhatsApp"
+    },
+    {
+      "id": "30004",
+      "nom": "TikTok for Business"
+    },
+    {
+      "id": "30005",
+      "nom": "X (Twitter)"
+    },
+    {
+      "id": "30006",
+      "nom": "X Ads"
+    },
+    {
+      "id": "30007",
+      "nom": "Snapchat Ads"
+    },
+    {
+      "id": "30008",
+      "nom": "LinkedIn Ads"
+    },
+    {
+      "id": "30009",
+      "nom": "Pinterest"
+    },
+    {
+      "id": "30010",
+      "nom": "Pinterest Ads"
+    },
+    {
+      "id": "30011",
+      "nom": "Google Ads"
+    },
+    {
+      "id": "30012",
+      "nom": "Apple Search Ads"
+    },
+    {
+      "id": "60001",
+      "nom": "Facebook Ads"
+    },
+    {
+      "id": "60002",
+      "nom": "Instagram Ads"
+    },
+    {
+      "id": "60003",
+      "nom": "WhatsApp Ads"
+    },
+    {
+      "id": "60004",
+      "nom": "Threads"
+    },
+    {
+      "id": "60005",
+      "nom": "Threads Ads"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnom\n1\tFacebook\n2\tInstagram\n3\tTikTok\n4\tYouTube\n5\tX\n6\tSnapchat\n7\tLinkedIn\n30001\tYouTube Ads\n30002\tWhatsApp\n30004\tTikTok for Business\n30005\tX (Twitter)\n30006\tX Ads\n30007\tSnapchat Ads\n30008\tLinkedIn Ads\n30009\tPinterest\n30010\tPinterest Ads\n30011\tGoogle Ads\n30012\tApple Search Ads\n60001\tFacebook Ads\n60002\tInstagram Ads\n60003\tWhatsApp Ads\n60004\tThreads\n60005\tThreads Ads\n",
+  "stderr": "",
+  "execution_time_ms": 60
+}

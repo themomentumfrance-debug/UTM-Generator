@@ -1,0 +1,34 @@
+{
+  "query": "SELECT 'utm_links' as table_name, COUNT(*) as count FROM utm_links WHERE LOWER(destination_url) LIKE '%test%' OR LOWER(utm_source) LIKE '%test%' OR LOWER(utm_campaign) LIKE '%test%' OR LOWER(angle_marketing) LIKE '%test%' OR LOWER(hook) LIKE '%test%'\nUNION ALL\nSELECT 'socials', COUNT(*) FROM socials WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'content_types', COUNT(*) FROM content_types WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'objectives', COUNT(*) FROM objectives WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'audiences', COUNT(*) FROM audiences WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'channels', COUNT(*) FROM channels WHERE LOWER(nom) LIKE '%test%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3QZidKwQqjX19oq.ff730d2052fe --database dFRnHJfK6NsMHCGNBUVWb8 --execute SELECT 'utm_links' as table_name, COUNT(*) as count FROM utm_links WHERE LOWER(destination_url) LIKE '%test%' OR LOWER(utm_source) LIKE '%test%' OR LOWER(utm_campaign) LIKE '%test%' OR LOWER(angle_marketing) LIKE '%test%' OR LOWER(hook) LIKE '%test%'\nUNION ALL\nSELECT 'socials', COUNT(*) FROM socials WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'content_types', COUNT(*) FROM content_types WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'objectives', COUNT(*) FROM objectives WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'audiences', COUNT(*) FROM audiences WHERE LOWER(nom) LIKE '%test%'\nUNION ALL\nSELECT 'channels', COUNT(*) FROM channels WHERE LOWER(nom) LIKE '%test%';",
+  "rows": [
+    {
+      "table_name": "objectives",
+      "count": "0"
+    },
+    {
+      "table_name": "utm_links",
+      "count": "0"
+    },
+    {
+      "table_name": "audiences",
+      "count": "0"
+    },
+    {
+      "table_name": "content_types",
+      "count": "0"
+    },
+    {
+      "table_name": "socials",
+      "count": "0"
+    },
+    {
+      "table_name": "channels",
+      "count": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "table_name\tcount\nobjectives\t0\nutm_links\t0\naudiences\t0\ncontent_types\t0\nsocials\t0\nchannels\t0\n",
+  "stderr": "",
+  "execution_time_ms": 103
+}
